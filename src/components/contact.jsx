@@ -93,7 +93,7 @@ export const Contact = (props) => {
                   ></textarea>
                 </div>
                 <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
+                  Send Email
                 </button>
               </form>
               {status && <p>{status}</p>}
@@ -102,27 +102,47 @@ export const Contact = (props) => {
           <div className="col-md-3 col-md-offset-1 contact-info">
             <div className="contact-item">
               <h3>Contact Info</h3>
+              {/* Address with a link to Google Maps */}
               <p>
                 <span>
                   <i className="fa fa-map-marker"></i> Address
                 </span>
-                {props.data ? props.data.address : "loading"}
-              </p>
-            </div>
-            <div className="contact-item">
-              <p>
-                <span>
-                  <i className="fa fa-phone"></i> Phone
-                </span>{" "}
-                {props.data ? props.data.phone : "loading"}
+                <a
+                  href={`https://www.google.com/maps?q=${props.data ? props.data.address : "loading"}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: "#333", // Dark color for visibility
+                    textDecoration: "none",
+                  }}
+                >
+                  {props.data ? props.data.address : "loading"}
+                </a>
               </p>
             </div>
             <div className="contact-item">
               <p>
                 <span>
                   <i className="fa fa-envelope-o"></i> Email
-                </span>{" "}
-                {props.data ? props.data.email : "loading"}
+                </span>
+                <a
+                  href={`mailto:${props.data ? props.data.email : "loading"}`}
+                  style={{
+                    color: "#333", // Ensure it's visible
+                    textDecoration: "none",
+                  }}
+                >
+                  {props.data ? props.data.email : "loading"}
+                </a>
+              </p>
+            </div>
+            {/* Added license numbers */}
+            <div className="contact-item">
+              <p>
+                <span>
+                  <i className="fa fa-certificate"></i> License Numbers
+                </span>
+                15065100LOB0606 IT065100C23BE6SK6P
               </p>
             </div>
           </div>
