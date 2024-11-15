@@ -1,5 +1,5 @@
 import React from "react";
-import './services.css';  // Adjust the path if the CSS file is in a different folder
+import './services.css';  // Import the CSS
 
 export const Services = (props) => {
   return (

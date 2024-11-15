@@ -1,7 +1,7 @@
 /* Style the circle that holds the image */
 .service-icon {
-    width: 120px;
-    height: 120px;
+    width: 150px;  /* Increase the size of the circle */
+    height: 150px; /* Match the width for a perfect circle */
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
@@ -14,22 +14,5 @@
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ensures the image covers the circle */
-  }
-  
-  .service-desc {
-    text-align: center;
-  }
-  
-  .section-title h2 {
-    margin-bottom: 30px;
-  }
-  
-  a {
-    text-decoration: underline;
-    color: #E4405F; /* Instagram pink color */
-  }
-  
-  a:hover {
-    color: #FF5A5F; /* Airbnb red color */
   }
   
