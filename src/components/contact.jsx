@@ -153,10 +153,19 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
+            &copy; 2024 Casa Carmela Positano. Design by {" "} 
+            <a href="https://www.linkedin.com/in/angelo-mandara-6aa4b4232/" rel="nofollow">
+            Angelo Mandara
+            </a>
+            , credits to {" "}
+            <a href="https://github.com/issaafalkattan/React-Landing-Page-Template" rel="nofollow">
+            Issaaf Kattan 
+            </a>
+            {" "} and to {" "}
             <a href="http://www.templatewire.com" rel="nofollow">
               TemplateWire
             </a>
+            .
           </p>
         </div>
       </div>
