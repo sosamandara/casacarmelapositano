@@ -11,15 +11,33 @@ export const Navigation = (props) => {
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
           >
-            {" "}
-            <span className="sr-only">Toggle navigation</span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
+            <span className="sr-only">Toggle navigation</span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
-            React Landing Page
-          </a>{" "}
+          <a
+            className="navbar-brand page-scroll"
+            href="#page-top"
+            style={{
+              color: "#ADD8E6", // Light blue color for text
+              fontWeight: "bold",
+              fontSize: "22px", // Slightly larger font size
+              display: "flex", // Flex display to align items horizontally
+              alignItems: "center", // Vertically align logo and text
+            }}
+          >
+            <img
+              src="/img/favicon.ico" // Ensure this path is correct
+              alt="Casa Carmela Logo"
+              style={{
+                height: "60px", // Larger size for better visibility
+                width: "100px",
+                marginRight: "10px", // Space between logo and text
+              }}
+            />
+            Casa Carmela
+          </a>
         </div>
 
         <div
@@ -28,8 +46,13 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#features" className="page-scroll">
-                Features
+              <a href="#portfolio" className="page-scroll">
+                Gallery
+              </a>
+            </li>
+            <li>
+              <a href="#where-we-are" className="page-scroll">
+                Where We Are
               </a>
             </li>
             <li>
@@ -43,18 +66,13 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="#portfolio" className="page-scroll">
-                Gallery
-              </a>
-            </li>
-            <li>
               <a href="#testimonials" className="page-scroll">
                 Testimonials
               </a>
             </li>
             <li>
-              <a href="#team" className="page-scroll">
-                Team
+              <a href="#booking" className="page-scroll">
+                Book with Us
               </a>
             </li>
             <li>

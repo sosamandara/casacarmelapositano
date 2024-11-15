@@ -1,0 +1,10 @@
+/* src/components/WhereWeAre.css */
+
+#where-we-are {
+    padding-top: 50px; /* Adjust as needed */
+  }
+  
+#where-we-are .section-title {
+    margin-top: 20px; /* Adjust this to control spacing */
+}
+  

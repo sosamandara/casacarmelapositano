@@ -1,0 +1,42 @@
+/* src/components/Booking.css */
+
+#booking {
+    padding: 60px 0;
+  }
+  
+  #booking .section-title h2 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  #booking .btn {
+    background-color: #0073e6; /* Customize button color */
+    border: none;
+  }
+  
+  #booking .btn:hover {
+    background-color: #005bb5; /* Customize hover color */
+  }
+  
+/* Booking.css */
+.rating-badge {
+    margin-bottom: 10px;
+  }
+  
+  .btn-airbnb {
+    background-color: #FF5A5F;
+  }
+  
+  .btn-booking {
+    background-color: #003580;
+  }
+  
+  .btn-booking .rating-box {
+    background-color: white;
+    color: #003580;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  

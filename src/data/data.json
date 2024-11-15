@@ -129,28 +129,10 @@
       "name": "Johnathan Doe"
     }
   ],
-  "Team": [
-    {
-      "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
-    },
-    {
-      "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
-    }
-  ],
+  "Booking": {
+    "airbnbLink": "https://www.airbnb.com/rooms/826055515812450770?guests=1&adults=1&s=67&unique_share_id=a25054a7-646c-4006-885d-65e7c909b629",
+    "bookingLink": "https://www.booking.com/Share-xmoX4W"
+  },
   "Contact": {
     "address": "4321 California St, San Francisco, CA 12345 ",
     "phone": "+1 123 456 1234",
@@ -159,11 +141,11 @@
     "twitter": "twitter.com",
     "youtube": "youtube.com"
   },
-  "Features": [
+  "WhereWeAre": [
     {
       "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Where We Are",
+      "text": "Our BnB is located in the heart of [Location Name], offering easy access to [Nearby Attractions or Highlights]."
     },
     {
       "icon": "fa fa-bullhorn",
