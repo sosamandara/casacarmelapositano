@@ -1,40 +1,47 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import React from "react";
 
 const initialState = {
-  name: "",
-  email: "",
+  from_name: "",
+  from_email: "",
   message: "",
 };
+
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
+  const [{ from_name, from_email, message }, setState] = useState(initialState);
+  const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
+
   const clearState = () => setState({ ...initialState });
-  
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
-    
-    {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
-    
+    console.log("Form submitted:", from_name, from_email, message);
+
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log("Email sent successfully:", result.text);
+          setStatus("Message sent successfully!");
           clearState();
         },
         (error) => {
-          console.log(error.text);
+          console.log("Error sending email:", error.text);
+          setStatus("Failed to send message. Please try again later.");
         }
       );
   };
+
   return (
     <div>
       <div id="contact">
@@ -43,59 +50,53 @@ export const Contact = (props) => {
             <div className="row">
               <div className="section-title">
                 <h2>Get In Touch</h2>
-                <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
-                </p>
+                <p>Please fill out the form below to send us an email, and we will get back to you as soon as possible.</p>
               </div>
-              <form name="sentMessage" validate onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
                       <input
                         type="text"
-                        id="name"
-                        name="name"
+                        name="from_name"
                         className="form-control"
                         placeholder="Name"
                         required
                         onChange={handleChange}
+                        value={from_name}
                       />
-                      <p className="help-block text-danger"></p>
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="form-group">
                       <input
                         type="email"
-                        id="email"
-                        name="email"
+                        name="from_email"
                         className="form-control"
                         placeholder="Email"
                         required
                         onChange={handleChange}
+                        value={from_email}
                       />
-                      <p className="help-block text-danger"></p>
                     </div>
                   </div>
                 </div>
                 <div className="form-group">
                   <textarea
                     name="message"
-                    id="message"
                     className="form-control"
                     rows="4"
                     placeholder="Message"
                     required
                     onChange={handleChange}
+                    value={message}
                   ></textarea>
-                  <p className="help-block text-danger"></p>
                 </div>
-                <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
                   Send Message
                 </button>
               </form>
+              {status && <p>{status}</p>}
             </div>
           </div>
           <div className="col-md-3 col-md-offset-1 contact-info">
@@ -130,18 +131,63 @@ export const Contact = (props) => {
               <div className="social">
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.facebook : "/"}>
-                      <i className="fa fa-facebook"></i>
+                    <a
+                      href={props.data ? props.data.instagram : "/"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-instagram"
+                      style={{
+                        backgroundColor: "#E4405F", // Instagram pink color
+                        color: "white",
+                        display: "inline-flex",
+                        alignItems: "center",
+                        borderRadius: "8px",
+                        padding: "10px 20px",
+                        fontSize: "16px",
+                      }}
+                    >
+                      <i className="fa fa-instagram" style={{ marginRight: "10px" }}></i>
+                      Instagram
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
-                      <i className="fa fa-twitter"></i>
+                    <a
+                      href={props.data ? props.data.airbnb : "/"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-airbnb"
+                      style={{
+                        backgroundColor: "#FF5A5F", // Airbnb red color
+                        color: "white",
+                        display: "inline-flex",
+                        alignItems: "center",
+                        borderRadius: "8px",
+                        padding: "10px 20px",
+                        fontSize: "16px",
+                      }}
+                    >
+                      <i className="fa fa-home" style={{ marginRight: "10px" }}></i>
+                      Airbnb
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.youtube : "/"}>
-                      <i className="fa fa-youtube"></i>
+                    <a
+                      href={props.data ? props.data.booking : "/"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-booking"
+                      style={{
+                        backgroundColor: "#003580", // Booking.com blue color
+                        color: "white",
+                        display: "inline-flex",
+                        alignItems: "center",
+                        borderRadius: "8px",
+                        padding: "10px 20px",
+                        fontSize: "16px",
+                      }}
+                    >
+                      <i className="fa fa-book" style={{ marginRight: "10px" }}></i>
+                      Booking
                     </a>
                   </li>
                 </ul>
@@ -153,15 +199,15 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2024 Casa Carmela Positano. Design by {" "} 
+            &copy; 2024 Casa Carmela Positano. Design by{" "}
             <a href="https://www.linkedin.com/in/angelo-mandara-6aa4b4232/" rel="nofollow">
-            Angelo Mandara
+              Angelo Mandara
             </a>
-            , credits to {" "}
+            , credits to{" "}
             <a href="https://github.com/issaafalkattan/React-Landing-Page-Template" rel="nofollow">
-            Issaaf Kattan 
-            </a>
-            {" "} and to {" "}
+              Issaaf Kattan
+            </a>{" "}
+            and to{" "}
             <a href="http://www.templatewire.com" rel="nofollow">
               TemplateWire
             </a>
