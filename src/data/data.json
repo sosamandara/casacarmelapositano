@@ -27,7 +27,16 @@
     { "title": "Poolside" },
     { "title": "Terrace" },
     { "title": "Exterior View" },
-    { "title": "Sunset View" }
+    { "title": "Sunset View" },
+    { "title": "Garden View" },
+    { "title": "Bathroom" },
+    { "title": "Hallway" },
+    { "title": "Private Cinema" },
+    { "title": "Fireplace Area" },
+    { "title": "Spa Room" },
+    { "title": "Rooftop Lounge" },
+    { "title": "Courtyard" },
+    { "title": "City View" }
   ],
   "Services": [
     {
