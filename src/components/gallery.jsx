@@ -1,5 +1,5 @@
-import { Image } from "./image";
 import React from "react";
+import { Image } from "./image";
 
 export const Gallery = (props) => {
   return (
@@ -8,8 +8,7 @@ export const Gallery = (props) => {
         <div className="section-title">
           <h2>Gallery</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            Explore the beautiful views and spaces at Casa Carmela through our gallery.
           </p>
         </div>
         <div className="row">
@@ -22,8 +21,7 @@ export const Gallery = (props) => {
                   >
                     <Image
                       title={d.title}
-                      largeImage={d.largeImage}
-                      smallImage={d.smallImage}
+                      image={`img/portfolio/${i + 1}.jpg`} // Dynamically construct the image path
                     />
                   </div>
                 ))
