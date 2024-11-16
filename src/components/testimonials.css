@@ -1,0 +1,76 @@
+#testimonials {
+    padding: 50px 15px;
+    background-color: #f9f9f9;
+}
+
+#testimonials .testimonial {
+    text-align: left; /* Align text to the left for better readability */
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Limit width to ensure readability */
+    margin: 20px auto; /* Center the testimonials horizontally */
+}
+
+#testimonials .testimonial-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px; /* Add space between image and text */
+    flex-shrink: 0;
+}
+
+#testimonials .testimonial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#testimonials .testimonial-content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    word-wrap: break-word;
+    flex: 1; /* Allow the text to take up remaining space */
+}
+
+#testimonials .testimonial-meta {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+#testimonials .testimonial-wrapper {
+    display: flex;
+    align-items: center; /* Vertically align the image and text */
+    justify-content: space-between; /* Ensure text and image stay together */
+}
+
+@media (max-width: 768px) {
+    #testimonials .testimonial {
+        padding: 15px;
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    #testimonials .testimonial-content {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    #testimonials .testimonial-wrapper {
+        flex-direction: column; /* Stack the image and text vertically */
+        align-items: center;
+    }
+
+    #testimonials .testimonial-image {
+        margin: 0 0 15px 0; /* Adjust spacing for stacked layout */
+    }
+
+    #testimonials .testimonial-content {
+        text-align: center;
+    }
+}
