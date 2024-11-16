@@ -1,65 +1,62 @@
 import React, { useState } from "react";
-import { Image } from "./image";
+import Image from "./image";
 import "./gallery.css";
 
 export const Gallery = (props) => {
   const [currentSet, setCurrentSet] = useState(1);
 
-  // Debugging: Log the data being received
-  console.log("Gallery Props Data: ", props.data);
+  const imagesPerPage = 12;
 
   const handleSetChange = (set) => {
     setCurrentSet(set);
   };
 
   const getImagesForCurrentSet = () => {
-    const images = props.data || []; // Fallback if no data is passed
-    const startIndex = (currentSet - 1) * 9;
-    return images.slice(startIndex, startIndex + 9);
+    const images = props.data || [];
+    const startIndex = (currentSet - 1) * imagesPerPage;
+    return images.slice(startIndex, startIndex + imagesPerPage);
   };
+
+  const totalSets = Math.ceil((props.data?.length || 0) / imagesPerPage);
 
   return (
     <div id="portfolio" className="text-center">
       <div className="container">
         <div className="section-title">
           <h2>Gallery</h2>
-          <p>
-            Explore the beautiful views and spaces at Casa Carmela through our
-            gallery.
-          </p>
+          <p>Explore the beautiful views and spaces at Casa Carmela through our gallery.</p>
         </div>
 
-        <div className="gallery-panel">
-          <button
-            className={`btn ${currentSet === 1 ? "btn-primary" : "btn-default"}`}
-            onClick={() => handleSetChange(1)}
-          >
-            1
-          </button>
-          <button
-            className={`btn ${currentSet === 2 ? "btn-primary" : "btn-default"}`}
-            onClick={() => handleSetChange(2)}
-          >
-            2
-          </button>
-        </div>
-
-        <div className="row">
-          <div className="portfolio-items">
-            {getImagesForCurrentSet().map((d, i) => (
-              <div
-                key={`${d.title}-${i}`}
-                className="col-sm-6 col-md-4 col-lg-4"
+        {/* Pagination Buttons */}
+        {totalSets > 1 && (
+          <div className="gallery-panel">
+            {[...Array(totalSets)].map((_, index) => (
+              <button
+                key={index + 1}
+                className={`btn ${currentSet === index + 1 ? "btn-primary" : "btn-default"}`}
+                onClick={() => handleSetChange(index + 1)}
               >
-                <Image
-                  title={d.title}
-                  image={`img/portfolio/${(currentSet - 1) * 9 + i + 1}.jpg`}
-                />
-              </div>
+                {index + 1}
+              </button>
             ))}
           </div>
+        )}
+
+        {/* Gallery Images */}
+        <div className="row portfolio-items">
+          {getImagesForCurrentSet().map((d, i) => (
+            <div key={`${d.title}-${i}`} className="col-sm-6 col-md-4 col-lg-4">
+              {d.image ? (
+                <Image title={d.title} image={d.image} />
+              ) : (
+                <div className="image-placeholder">No Image Available</div>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </div>
   );
 };
+
+export default Gallery;
