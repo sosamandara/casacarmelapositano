@@ -1,0 +1,77 @@
+/* Navbar styles for large screens */
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navbar-nav li a {
+    color: #333;
+    font-size: 16px;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+  
+  .navbar-nav li a:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+  }
+  
+  /* Hide navbar items on small screens */
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      display: none !important; /* Hide the horizontal navbar */
+    }
+  
+    .navbar-toggle {
+      display: block; /* Ensure the hamburger button is visible */
+    }
+  
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100%;
+      background-color: #fff;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+      overflow-y: auto;
+      transition: all 0.3s ease-in-out;
+      padding-top: 70px;
+    }
+  
+    .sidebar.open {
+      left: 0;
+    }
+  
+    .sidebar-menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .sidebar-menu li {
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .sidebar-menu li a {
+      display: block;
+      padding: 10px 20px;
+      color: #333;
+      text-decoration: none;
+      font-size: 18px;
+    }
+  
+    .sidebar-menu li a:hover {
+      background-color: #f8f9fa;
+      color: #007bff;
+    }
+  }
+  
+  /* Ensure horizontal navbar remains for larger screens */
+  @media (min-width: 768px) {
+    .sidebar {
+      display: none; /* Hide the sidebar on larger screens */
+    }
+  }
+  
