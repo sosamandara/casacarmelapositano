@@ -1,12 +1,14 @@
+/* Gallery Items Styling */
 .portfolio-items {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* Center-align the images */
 }
 
 .col-sm-6,
 .col-md-4,
 .col-lg-4 {
-  flex: 0 0 33.333%; /* Ensure three images per row */
+  flex: 0 0 33.333%; /* Default to three images per row */
   max-width: 33.333%;
   padding: 10px; /* Add spacing between the items */
   box-sizing: border-box; /* Prevent overflowing */
@@ -16,6 +18,7 @@
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 8px; /* Add a subtle border radius */
 }
 
 .image-placeholder {
@@ -30,6 +33,7 @@
   border: 1px dashed #ccc;
 }
 
+/* Pagination Buttons Styling */
 .gallery-panel {
   text-align: center;
   margin-bottom: 20px;
@@ -40,6 +44,8 @@
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 
 .gallery-panel .btn-primary {
@@ -47,7 +53,25 @@
   color: white;
 }
 
+.gallery-panel .btn-primary:hover {
+  background-color: #0056b3;
+}
+
 .gallery-panel .btn-default {
   background-color: #f8f9fa;
   color: #333;
+}
+
+.gallery-panel .btn-default:hover {
+  background-color: #e2e6ea;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .col-sm-6,
+  .col-md-4,
+  .col-lg-4 {
+    flex: 0 0 100%; /* One image per row */
+    max-width: 100%;
+  }
 }
