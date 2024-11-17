@@ -16,7 +16,7 @@ export const Header = (props) => {
             ? props.data.paragraph
             : "Your serene escape nestled in the heart of Positano, along the stunning Amalfi Coast. From cozy spaces to a fully equipped kitchen, our home is designed to make you feel at ease."}
         </p>
-        <a href="#BookWithUs" className="btn btn-custom">
+        <a href="#booking" className="btn btn-custom">
           Book Now
         </a>
       </div>
