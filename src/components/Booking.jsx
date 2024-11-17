@@ -8,7 +8,10 @@ export const Booking = (props) => {
         <div className="col-md-8 col-md-offset-2 section-title">
           <h2>Book Your Stay</h2>
           <p>
-            Experience comfort and elegance in the heart of Positano. Book now to secure your stay at Casa Carmela through Airbnb or Booking.com.
+          Don’t wait to secure your dream vacation at Casa Carmela. Whether planning a romantic getaway or a family adventure, our cozy yet elegant accommodations provide the perfect base for exploring Positano and the Amalfi Coast.
+          </p>
+          <p>
+          Booking directly with us ensures the best rates and personalized service. Let us help you create memories that last a lifetime.
           </p>
         </div>
         <div id="booking-options" style={{ marginTop: "30px" }}>

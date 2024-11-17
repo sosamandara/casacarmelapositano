@@ -4,18 +4,18 @@
     "paragraph": "Welcome to Casa Carmela, your serene escape nestled in the heart of Positano, along the stunning Amalfi Coast. From curated cozy spaces to fully equipped kitchen ready for your culinary adventures, Casa Carmela is designed to feel like home. Explore Positano’s vibrant streets, savor fresh seafood, or relax on sunlit beaches—all just steps away. Let the charm of the Amalfi Coast inspire your stay"
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Casa Carmela is a labor of love, hand-built years ago by Nonno Gaetano and proudly owned by the Mandara and Guida families. With deep roots in the Amalfi Coast, we are passionate about sharing our home and local traditions with you.\n\nOur family of four—Carmela, Francesco, Angelo, and Maria—welcome you to experience the warmth and authenticity of our heritage. Whether guiding you to the best local restaurants, hidden beaches, or artisan shops, we are here to make your stay unforgettable.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Prime Location",
+      "Convenient Access",
+      "Authentic Hospitality",
+      "History and Legacy"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Comfort and Convenience",
+      "Local Charm",
+      "Tranquil Retreat",
+      "Stunning Views"
     ]
   },
   "Gallery": [
@@ -45,37 +45,37 @@
     { "title": "Kitchen", "image": "img/portfolio/46.jpg" }
   ],
   "Services": [
-    {
-      "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    }
-  ],
+  {
+    "icon": "fa fa-wifi",
+    "name": "Complimentary Wi-Fi",
+    "text": "Stay connected with our high-speed Wi-Fi available throughout the property, ensuring you can share your Positano moments or work remotely with ease."
+  },
+  {
+    "icon": "fa fa-utensils",
+    "name": "Fully Equipped Kitchen",
+    "text": "Prepare delicious meals in our fully stocked kitchen, complete with modern appliances including a moka pot, Dolce Gusto coffee machine, and more."
+  },
+  {
+    "icon": "fa fa-bed",
+    "name": "Comfortable Accommodations",
+    "text": "Relax in our cozy rooms, each thoughtfully designed and named after beloved family members, offering a restful retreat after a day of exploring."
+  },
+  {
+    "icon": "fa fa-map",
+    "name": "Local Recommendations",
+    "text": "Discover the best of Positano with our expert recommendations for restaurants, beaches, hiking trails, and hidden gems only locals know."
+  },
+  {
+    "icon": "fa fa-ship",
+    "name": "Boat Tours and Experiences",
+    "text": "Embark on unforgettable adventures with boat tours to Capri, Amalfi, and more, or join a local limoncello-making experience for a taste of Positano."
+  },
+  {
+    "icon": "fa fa-bus",
+    "name": "Convenient Transport",
+    "text": "Easily access public transportation with bus stops just 50 meters away, connecting you to Sorrento, Amalfi, and beyond."
+  }
+],
   "Testimonials": [
     {
       "img": "img/testimonials/01.jpg",

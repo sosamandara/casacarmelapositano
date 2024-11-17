@@ -24,7 +24,10 @@ export const Gallery = (props) => {
       <div className="container">
         <div className="section-title">
           <h2>Gallery</h2>
-          <p>Explore the beautiful views and spaces at Casa Carmela through our gallery.</p>
+          <p>Discover the beauty of Casa Carmela through our gallery. </p>
+
+          <p>Get a glimpse of our spacious rooms named after beloved family members, cozy living areas, and the terracethat showcase the magical Positano sunsets.</p>
+
         </div>
 
         {/* Pagination Buttons */}

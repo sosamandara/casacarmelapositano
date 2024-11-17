@@ -8,8 +8,13 @@ export const WhereWeAre = (props) => {
       <div className="container">
         <h2 className="section-title">Where We Are</h2>
         <p>
-          Our BnB is located in the heart of [Location Name], offering easy access to [Nearby Attractions or Highlights].
-          Explore the scenic beauty, local restaurants, and exciting activities nearby.
+        Casa Carmela is situated in Liparlati, one of Positano’s oldest districts, offering a peaceful retreat while remaining just minutes away from the town’s vibrant center.
+        </p>
+        <p>
+        From our convenient location, it’s very easy to catch both the local bus and the SITA bus that connects to Sorrento and Amalfi, with stops just 50 meters away. Additionally, a short walk down nearby steps will take you to Piazza dei Mulini and Spiaggia Grande.
+        </p>
+        <p>
+          For your daily needs, a minimarket is located just a few steps from Casa Carmela, ensuring all essentials are within easy reach.
         </p>
         
         {/* Google Maps iframe */}
