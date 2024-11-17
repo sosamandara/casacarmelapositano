@@ -24,6 +24,47 @@
     text-align: center; /* Ensure paragraph text is centered */
   }
   
+/* Styles for rotation message */
+.rotate-device {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1001; /* Above other content */
+  width: 80%; /* Responsive width */
+  box-sizing: border-box;
+}
+
+/* Styling for rotation icon */
+.rotate-icon {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 24px;
+  animation: rotate-icon 2s linear infinite;
+}
+
+/* Animation for the rotation icon */
+@keyframes rotate-icon {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+/* Media query to show rotation message only in portrait mode */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .rotate-device {
+      display: block;
+  }
+}
   /* For Medium Screens (Tablets) */
   @media screen and (max-width: 1200px) {
     .Header-title {
