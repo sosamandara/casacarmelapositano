@@ -28,7 +28,7 @@ export const Header = (props) => {
           {orientation === 'portrait' && showRotateMessage && (
             <div className="rotate-device">
               <span className="rotate-icon">🔄</span>
-              Rotate your device for the best experience
+              <p>Rotate your device for the best experience</p>
               <button onClick={handleDismiss} className="dismiss-button">Dismiss</button>
             </div>
           )}

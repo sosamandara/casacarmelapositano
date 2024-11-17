@@ -24,29 +24,27 @@
     text-align: center; /* Ensure paragraph text is centered */
   }
   
-/* Styles for rotation message */
-.rotate-device {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  z-index: 1001; /* Above other content */
-  width: 80%; /* Responsive width */
-  box-sizing: border-box;
+  .rotate-device {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; /* Center-align the text */
+    z-index: 1001;
+    width: 80%;
+    box-sizing: border-box;
 }
 
-/* Styling for rotation icon */
+/* Styling for the rotation icon */
 .rotate-icon {
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 24px;
-  animation: rotate-icon 2s linear infinite;
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px; /* Add space below the icon */
 }
 
 /* Animation for the rotation icon */
@@ -125,13 +123,15 @@
     }
   }
 
+  /* Styling for the dismiss button */
   .dismiss-button {
-    padding: 5px 10px;
-    margin-top: 10px;
-    background: #444; /* Dark background for visibility */
-    color: white; /* White text */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  margin-top: 20px; /* Add space above the button */
+  background: #444; /* Button background color */
+  color: white; /* Text color */
+  padding: 10px 15px; /* Button padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center; /* Center-align text within the button */
 }
   
