@@ -61,4 +61,27 @@
       margin-top: 10px; /* Keep spacing above the button */
     }
   }
+
+  @media screen and (max-width: 440px) {
+    .Header-title {
+      font-size: 1.2rem; /* Even smaller title for smaller screens */
+      margin-bottom: 6px; /* Further reduce spacing below the title */
+      text-align: center; /* Ensure proper alignment */
+    }
+  
+    .paragraph {
+      font-size: 0.75rem; /* Smaller paragraph text for smaller screens */
+      line-height: 1.3; /* Even tighter line spacing */
+      max-width: 85%; /* Slightly more constrained width */
+      padding: 6px 8px; /* Further reduce padding for a more compact layout */
+      margin: 0 auto; /* Center-align text block */
+    }
+  
+    .btn-custom {
+      font-size: 0.65rem; /* Further adjust button font size */
+      padding: 5px 8px; /* More compact button padding */
+      margin-top: 8px; /* Slightly reduce spacing above the button */
+    }
+  }
+
   
