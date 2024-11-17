@@ -1,4 +1,5 @@
 import React from "react";
+import "./header.css";
 
 export const Header = (props) => {
   return (
@@ -8,17 +9,18 @@ export const Header = (props) => {
           <div className="container">
             <div className="row">
               <div className="col-md-8 col-md-offset-2 intro-text">
-                <h1>
-                  {props.data ? props.data.title : "Loading"}
-                  <span></span>
+                <h1 className="Header-title">
+                  {props.data ? props.data.title : "Loading..."}
                 </h1>
-                <p>{props.data ? props.data.paragraph : "Loading"}</p>
+                <p className="paragraph">
+                  {props.data ? props.data.paragraph : "Loading..."}
+                </p>
                 <a
-                  href="#where-we-are"
+                  href="#BookWithUs" /* Updated link to target the "BookWithUs" section */
                   className="btn btn-custom btn-lg page-scroll"
                 >
-                  Learn More
-                </a>{" "}
+                  Book Now {/* Updated button text */}
+                </a>
               </div>
             </div>
           </div>

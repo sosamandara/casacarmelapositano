@@ -1,0 +1,105 @@
+/* Styling for the title */
+.Header-title {
+    color: #005f73;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Styling for the paragraph */
+  .paragraph {
+    color: #ffffff;
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling */
+  .btn-custom {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 auto;
+    display: inline-block;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-custom:hover {
+    background-color: #ffffff;
+    color: #005f73;
+    border-color: #005f73;
+  }
+  
+  /* Additional styling for the intro section */
+  #header .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    padding: 0 15px; /* Add padding for smaller screens */
+  }
+  
+  #header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  .intro-text {
+    position: relative;
+    z-index: 2;
+    max-width: 90%; /* Constrain text width for smaller devices */
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media screen and (max-width: 768px) {
+    /* Adjust text and button for smaller screens */
+    .Header-title {
+      font-size: 2em; /* Reduce title size */
+      margin-top: -20px; /* Move title higher */
+    }
+  
+    .paragraph {
+      font-size: 1em; /* Reduce font size for paragraph */
+      line-height: 1.5; /* Adjust line spacing */
+      max-width: 100%; /* Ensure text fits within the screen */
+      padding: 15px;
+      margin-top: -10px; /* Move paragraph higher */
+    }
+  
+    .intro-text {
+      max-width: 100%; /* Ensure text container fits smaller devices */
+      margin-bottom: 20px; /* Add space below the text */
+      transform: translateY(-50px); /* Move the entire text section higher */
+    }
+  
+    .btn-custom {
+      margin-top: 10px; /* Reduce spacing above the button */
+      transform: translateY(-50px); /* Move button higher */
+    }
+  
+    #header {
+      padding-bottom: 60px; /* Add padding to avoid overlapping with the next section */
+    }
+  }
+  
