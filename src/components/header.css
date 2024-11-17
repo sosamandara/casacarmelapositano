@@ -26,34 +26,35 @@
     margin-top: 20px; /* Remove negative margins or transformations */
   }
   
-  /* Responsive Design for Smaller Screens */
-  @media screen and (max-width: 768px) {
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
     .Header-title {
-      font-size: 1.8em; /* Further reduce title size */
+      font-size: 1.5rem; /* Smaller title size */
       margin-top: 0; /* Reset margin */
     }
   
     .paragraph {
-      font-size: 0.9em; /* Further reduce font size for paragraph */
-      line-height: 1.4; /* Adjust line spacing */
-      max-width: 100%;
-      padding: 10px;
+      font-size: 0.8rem; /* Smaller paragraph font size */
+      line-height: 1.3; /* Adjust line spacing */
+      max-width: 100%; /* Ensure the text fits well */
+      padding: 8px; /* Reduce padding */
       margin-top: 10px; /* Adjust margin */
     }
   
     .intro-text {
-      max-width: 100%;
-      margin-bottom: 20px;
+      max-width: 100%; /* Ensure text container fits mobile devices */
+      margin-bottom: 15px;
       transform: none; /* Remove transformations */
     }
   
     .btn-custom {
+      font-size: 0.7rem; /* Reduce button text size */
+      padding: 6px 12px; /* Compact button padding */
       margin-top: 15px; /* Adjust spacing above the button */
-      transform: none; /* Remove transformations */
     }
   
     #header {
-      padding-bottom: 80px; /* Increase padding to avoid overlapping */
+      padding-bottom: 80px; /* Maintain extra padding to prevent overlap */
     }
   }
   
