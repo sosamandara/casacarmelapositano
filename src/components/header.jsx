@@ -1,16 +1,37 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./header.css";
 
 export const Header = (props) => {
+  const [orientation, setOrientation] = useState(window.innerWidth > window.innerHeight ? 'landscape' : 'portrait');
+  const [showRotateMessage, setShowRotateMessage] = useState(true);
+
+  useEffect(() => {
+    function handleResize() {
+      setOrientation(window.innerWidth > window.innerHeight ? 'landscape' : 'portrait');
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const handleDismiss = () => {
+    setShowRotateMessage(false);
+  };
+
   return (
     <header id="header">
       <div className="intro">
         <div className="overlay"></div>
         <div className="container">
-          {/* Rotation message with symbol */}
-          <div className="rotate-device">
-            <span className="rotate-icon">🔄</span> Rotate your device for the best experience
-          </div>
+          {orientation === 'portrait' && showRotateMessage && (
+            <div className="rotate-device">
+              <span className="rotate-icon">🔄</span>
+              Rotate your device for the best experience
+              <button onClick={handleDismiss} className="dismiss-button">Dismiss</button>
+            </div>
+          )}
           <div className="intro-text">
             <h1 className="Header-title">
               {props.data ? props.data.title : "Welcome to Casa Carmela"}
