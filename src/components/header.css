@@ -1,60 +1,64 @@
-/* Additional styling for the intro section */
-#header .intro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* Changed from height to min-height */
-    text-align: center;
-    color: white;
-    padding: 0 15px; /* Add padding for smaller screens */
-    position: relative; /* Added position relative */
+/* General Styling for Title */
+.Header-title {
+    font-size: 2vw; /* Slightly smaller for large screens */
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Subtle shadow for better contrast */
+    margin-bottom: 15px;
+    line-height: 1.2;
+    text-align: center; /* Center align for better layout */
+    max-width: 100%; /* Prevent overflow */
+    overflow-wrap: break-word; /* Ensure long words wrap properly */
   }
   
-  #header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
+  /* General Styling for Paragraph */
+  .paragraph {
+    font-size: 1rem; /* Standard font size for large screens */
+    color: #ffffff;
+    line-height: 1.5; /* Good readability */
+    max-width: 70%; /* Keep text within a reasonable width */
+    margin: 0 auto 15px auto; /* Center align */
+    padding: 12px 15px; /* Add some padding for spacing */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Ensure paragraph text is centered */
   }
   
-  .intro-text {
-    position: relative;
-    z-index: 2;
-    max-width: 90%; /* Constrain text width for smaller devices */
-    margin-top: 20px; /* Remove negative margins or transformations */
-  }
-  
-/* Responsive Design for Smaller Screens */
-@media screen and (max-width: 768px) {
+  /* For Medium Screens (Tablets) */
+  @media screen and (max-width: 1200px) {
     .Header-title {
-      font-size: 1.5rem; /* Smaller title size */
-      margin-top: 0; /* Reset margin */
+      font-size: 1.8rem; /* Slightly smaller for tablets */
+      margin-bottom: 12px; /* Adjust spacing below */
     }
   
     .paragraph {
-      font-size: 0.8rem; /* Smaller paragraph font size */
-      line-height: 1.3; /* Adjust line spacing */
-      max-width: 100%; /* Ensure the text fits well */
-      padding: 8px; /* Reduce padding */
-      margin-top: 10px; /* Adjust margin */
+      font-size: 0.9rem; /* Adjust paragraph size */
+      max-width: 80%; /* Allow slightly more width */
+      line-height: 1.4;
+      padding: 10px 12px; /* Adjust padding for better fit */
+    }
+  }
+  
+  /* For Small Screens (Phones) */
+  @media screen and (max-width: 768px) {
+    .Header-title {
+      font-size: 1.4rem; /* Smaller title for mobile */
+      margin-bottom: 8px; /* Reduce spacing below the title */
+      text-align: center; /* Ensure proper alignment */
     }
   
-    .intro-text {
-      max-width: 100%; /* Ensure text container fits mobile devices */
-      margin-bottom: 15px;
-      transform: none; /* Remove transformations */
+    .paragraph {
+      font-size: 0.85rem; /* Smaller paragraph text for mobile */
+      line-height: 1.4; /* Tighter line spacing */
+      max-width: 90%; /* Expand to fit the screen */
+      padding: 8px 10px; /* Reduce padding for compact layout */
+      margin: 0 auto; /* Center-align text block */
     }
   
     .btn-custom {
-      font-size: 0.7rem; /* Reduce button text size */
-      padding: 6px 12px; /* Compact button padding */
-      margin-top: 15px; /* Adjust spacing above the button */
-    }
-  
-    #header {
-      padding-bottom: 80px; /* Maintain extra padding to prevent overlap */
+      font-size: 0.75rem; /* Adjust button font size */
+      padding: 6px 10px; /* Compact button padding */
+      margin-top: 10px; /* Keep spacing above the button */
     }
   }
   
