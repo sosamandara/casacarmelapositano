@@ -14,7 +14,7 @@ export const WhereWeAre = (props) => {
         From our convenient location, it’s very easy to catch both the local bus and the SITA bus that connects to Sorrento and Amalfi, with stops just 50 meters away. Additionally, a short walk down nearby steps will take you to Piazza dei Mulini and Spiaggia Grande.
         </p>
         <p>
-          For your daily needs, a minimarket is located just a few steps from Casa Carmela, ensuring all essentials are within easy reach.
+          For your daily needs, two minimarkets are located just a few steps from Casa Carmela, ensuring all essentials are within easy reach.
         </p>
         
         {/* Google Maps iframe */}
