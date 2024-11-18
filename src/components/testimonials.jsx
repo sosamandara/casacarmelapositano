@@ -18,7 +18,14 @@ export const Testimonials = (props) => {
                                         </div>
                                         <div className="testimonial-content">
                                             <p>"{d.text}"</p>
-                                            <div className="testimonial-meta">- {d.name}</div>
+                                            <div className="testimonial-meta">
+                                                - {d.name}
+                                                {d.where_and_platform && (
+                                                    <span className="testimonial-platform">
+                                                        {" "}({d.where_and_platform})
+                                                    </span>
+                                                )}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

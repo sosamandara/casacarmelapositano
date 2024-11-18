@@ -44,68 +44,42 @@
     { "title": "Entrance", "image": "img/portfolio/73.jpg" },
     { "title": "Kitchen", "image": "img/portfolio/46.jpg" }
   ],
-  "Services": [
-  {
-    "icon": "fa fa-wifi",
-    "name": "Complimentary Wi-Fi",
-    "text": "Stay connected with our high-speed Wi-Fi available throughout the property, ensuring you can share your Positano moments or work remotely with ease."
-  },
-  {
-    "icon": "fa fa-utensils",
-    "name": "Fully Equipped Kitchen",
-    "text": "Prepare delicious meals in our fully stocked kitchen, complete with modern appliances including a moka pot, Dolce Gusto coffee machine, and more."
-  },
-  {
-    "icon": "fa fa-bed",
-    "name": "Comfortable Accommodations",
-    "text": "Relax in our cozy rooms, each thoughtfully designed and named after beloved family members, offering a restful retreat after a day of exploring."
-  },
-  {
-    "icon": "fa fa-map",
-    "name": "Local Recommendations",
-    "text": "Discover the best of Positano with our expert recommendations for restaurants, beaches, hiking trails, and hidden gems only locals know."
-  },
-  {
-    "icon": "fa fa-ship",
-    "name": "Boat Tours and Experiences",
-    "text": "Embark on unforgettable adventures with boat tours to Capri, Amalfi, and more, or join a local limoncello-making experience for a taste of Positano."
-  },
-  {
-    "icon": "fa fa-bus",
-    "name": "Convenient Transport",
-    "text": "Easily access public transportation with bus stops just 50 meters away, connecting you to Sorrento, Amalfi, and beyond."
-  }
-],
   "Testimonials": [
     {
       "img": "img/testimonials/01.jpg",
       "text": "\"Amazing stay at casa Carmela . It is so spacious and so clean . It’s bright and beautiful. The balcony is breath taking . They communicated daily with help immediately and suggestions . When I return I will only stay here . The house is well equipped with snacks and frozen cafe .. delicious !! Positano is a lot of steep walking keep that in mind .. I love this home because you can catch the bus right outside .. it is perfection and the family is so nice !! I miss it already\"",
-      "name": "Gina"
+      "name": "Gina",
+      "where_and_platform":"October 2024   AirBnB"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Thank you ! You exceeded all our expectations for myself and my two sons! This is a newer property which had little to no reviews. I took a chance on it and it was the best decision ever. this property has been completely renovated.. full kitchen .. wonderful showers.. state of the art tech.. was absolutely beautiful! The owners arranged our cars from Naples for us.. met us there on arrival. She even had a welcome letter and these beautiful artisan treats that she made for us! The location is perfect! close to a fresh market we could walk to and cook breakfast.. walking distance to restaurants and the main shopping areas. The view is breathtaking! It as three separate bedrooms full kitchen .. laundry.. WiFi .. everything! Do not waste your time looking for another property to stay in . Book this now ! Many thanks to the landlord for his hospitality! We hope to be back again!\"",
+      "name": "Al",
+      "where_and_platform":"June 2023   Booking.com"
     },
     {
       "img": "img/testimonials/02.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
+      "text": "\"Casa Carmela's hosts were so incredibly welcoming! The home was larger than the photos show. The space was so clean and bright, as soon as we walked in, we felt comfortable and chill. Especially appreciated the little surprising touches 😊 Would definitely return!\"",
+      "name": "Sue",
+      "where_and_platform":"March 2024   AirBnB"
     },
     {
       "img": "img/testimonials/03.jpg",
       "text": "\"The home was in beautiful location and was so beautiful and clean. They provide so many extra ammenties and special touches to make your stay memorable and wonderful. They are very kind and helpful with setting up experiences. Our family of six enjoyed our stay and will visit again.\"",
-      "name": "Joseph"
-    },
-    {
-      "img": "img/testimonials/04.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
+      "name": "Joseph",
+      "where_and_platform":"July 2024   AirBnB"
     },
     {
       "img": "img/testimonials/05.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
+      "text": "\"AMAZING! We loved the location. Yes, there were lots of steps but we enjoyed the views everyday! The 3 bedrooms were fabulous. They were amazing hosts and we had everything we needed to feel like a local for 4 nights!\"",
+      "name": "Angie",
+      "where_and_platform":"June 2024   Booking.com"
     },
     {
       "img": "img/testimonials/06.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
+      "text": "\"un excelente lugar para quedarse\"",
+      "name": "Morones",
+      "where_and_platform":"September 2023   Booking.com"
     }
   ],
   "Booking": {
@@ -119,27 +93,5 @@
     "booking": "https://www.booking.com/Share-xmoX4W",
     "airbnb": "https://www.airbnb.com/rooms/826055515812450770?guests=1&adults=1&s=67&unique_share_id=a25054a7-646c-4006-885d-65e7c909b629",
     "instagram": "https://www.instagram.com/casacarmelapositano/"
-  },
-  "WhereWeAre": [
-    {
-      "icon": "fa fa-comments-o",
-      "title": "Where We Are",
-      "text": "Our BnB is located in the heart of [Location Name], offering easy access to [Nearby Attractions or Highlights]."
-    },
-    {
-      "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    }
-  ]
+  }
 }

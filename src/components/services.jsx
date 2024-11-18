@@ -8,53 +8,52 @@ export const Services = (props) => {
         <div className="section-title">
           <h2>Our Services</h2>
           <p>
-            Enjoy a comfortable stay at Casa Carmela, with all the amenities
-            you need for a great vacation. Here are the key features:
+            Enjoy a comfortable stay at Casa Carmela, with all the amenities you need for a memorable vacation. Here are the key features:
           </p>
         </div>
         <div className="row">
           <div className="col-md-4">
             <div className="service-icon">
               <img
-                src="img/portfolio/1.jpg" // Change to your image path
-                alt="Living Room"
+                src="img/portfolio/7.jpg" // Change to your image path
+                alt="BedRoom"
                 className="service-icon-img"
               />
             </div>
             <div className="service-desc">
               <h3>3 Bedrooms</h3>
               <p>
-                Spacious accommodation for up to 6 people, perfect for families
-                or groups of friends.
+                Spacious accommodation for up to 6 people, ideal for families, groups of friends, or even smaller parties seeking a cozy and relaxing stay.
               </p>
             </div>
           </div>
           <div className="col-md-4">
             <div className="service-icon">
               <img
-                src="img/portfolio/2.jpg" // Change to your image path
+                src="img/portfolio/10.jpg" // Change to your image path
                 alt="Bathroom"
                 className="service-icon-img"
               />
             </div>
             <div className="service-desc">
               <h3>2.5 Bathrooms</h3>
-              <p>Convenient bathroom facilities with modern fittings.</p>
+              <p>
+                Convenient bathroom facilities with modern fittings for a comfortable stay.
+              </p>
             </div>
           </div>
           <div className="col-md-4">
             <div className="service-icon">
               <img
-                src="img/portfolio/3.jpg" // Change to your image path
-                alt="Recent Appliances"
+                src="img/portfolio/42.jpg" // Change to your image path
+                alt="Modern Appliances"
                 className="service-icon-img"
               />
             </div>
             <div className="service-desc">
-              <h3>Recent Appliances</h3>
+              <h3>Modern Appliances</h3>
               <p>
-                Enjoy modern appliances, including a coffee machine, kettle,
-                microwave, and more.
+              Fully equipped with modern conveniences, including air conditioning, heating, a fully stocked kitchen (with an oven, microwave, dishwasher, refrigerator, and coffee makers), a washing machine, a water refill station, TVs, and everything you need for a comfortable and relaxing stay.
               </p>
             </div>
           </div>
@@ -62,25 +61,26 @@ export const Services = (props) => {
 
         <div className="row">
           <div className="col-md-4">
-            <div className="service-icon">
-              <img
-                src="img/portfolio/4.jpg" // Change to your image path
-                alt="Convenient Location"
-                className="service-icon-img"
-              />
+              <div className="service-icon">
+                <img
+                  src="img/portfolio/wifi.jpg" // Change to your image path
+                  alt="High-Speed Wi-Fi"
+                  className="service-icon-img"
+                />
+              </div>
+              <div className="service-desc">
+                <h3>High-Speed Wi-Fi</h3>
+                <p>
+                  Enjoy reliable, high-speed Wi-Fi throughout the property, perfect for staying connected whether you're working remotely or streaming your favorite shows.
+                </p>
+              </div>
             </div>
-            <div className="service-desc">
-              <h3>Convenient Location</h3>
-              <p>
-                The apartment is very near to a minimarket, bus stops, and a few
-                steps from Piazza Mulini.
-              </p>
-            </div>
-          </div>
+
+
           <div className="col-md-4">
             <div className="service-icon">
               <img
-                src="img/portfolio/5.jpg" // Change to your image path
+                src="img/portfolio/4.jpg" // Change to your image path
                 alt="Prime Location"
                 className="service-icon-img"
               />
@@ -88,15 +88,15 @@ export const Services = (props) => {
             <div className="service-desc">
               <h3>Prime Location</h3>
               <p>
-                The apartment is located in the heart of Positano, very close to
-                the center, for easy access to local attractions.
+                Conveniently located near two minimarkets, bus stops to Sorrento and Amalfi, and just a short walk to Piazza dei Mulini and Spiaggia Grande.
               </p>
             </div>
           </div>
+          
           <div className="col-md-4">
             <div className="service-icon">
               <img
-                src="img/portfolio/6.jpg" // Change to your image path
+                src="img/portfolio/servizi.jpg" // Change to your image path
                 alt="Your Dedicated Host"
                 className="service-icon-img"
               />
@@ -104,9 +104,7 @@ export const Services = (props) => {
             <div className="service-desc">
               <h3>Your Dedicated Host</h3>
               <p>
-                Our host will take care of you and provide helpful suggestions
-                to organize a memorable stay, ensuring you create lifelong
-                memories.
+                Our host will provide personalized recommendations and assistance to ensure you have a wonderful and stress-free stay.
               </p>
             </div>
           </div>
