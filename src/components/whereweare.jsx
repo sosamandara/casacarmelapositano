@@ -20,7 +20,7 @@ export const WhereWeAre = (props) => {
         {/* Google Maps iframe */}
         <div className="map-container">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6055.840341447551!2d14.484437576435694!3d40.63164244253039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b976effa7c9dd%3A0x2bc9d3db4dab1205!2sV.%20G.%20Marconi%2C%20196%2C%2084017%20Positano%20SA!5e0!3m2!1sit!2sit!4v1731610105876!5m2!1sit!2sit"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.9255986520125!2d14.484310376410413!3d40.63152274253785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b974cef855e4d%3A0xde520780f7602a6b!2sCasa%20Carmela%20Positano!5e0!3m2!1sit!2sit!4v1733153620072!5m2!1sit!2sit"
             width="100%"
             height="400"
             style={{ border: 0 }}
