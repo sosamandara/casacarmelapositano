@@ -19,6 +19,15 @@
     })(window, document, 'script', 'dataLayer', 'GTM-TQ9BS7H3');
   </script>
   <!-- End Google Tag Manager -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-270NZ37MN3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-270NZ37MN3');
+  </script>
 
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
@@ -33,19 +42,38 @@
     href="img/apple-touch-icon-114x114.png"
   />
 
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <link
-    rel="stylesheet"
-    type="text/css"
-    href="fonts/font-awesome/css/font-awesome.css"
-  />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link
-    rel="stylesheet"
-    type="text/css"
-    href="css/nivo-lightbox/nivo-lightbox.css"
-  />
-  <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css" />
+  <!-- CSS Critico (aggiunto qui) -->
+  <style>
+    /* Inserisci il CSS critico generato per il contenuto above-the-fold */
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+    }
+    /* Altre regole critiche necessarie per la prima visualizzazione */
+  </style>
+
+  <!-- Rinvio CSS non essenziale -->
+  <link rel="stylesheet" href="css/bootstrap.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="css/nivo-lightbox/nivo-lightbox.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="css/nivo-lightbox/default.css" media="print" onload="this.media='all'" />
+
+  <!-- Font -->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
     rel="stylesheet"
@@ -58,9 +86,11 @@
     href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900"
     rel="stylesheet"
   />
-  <title>Casa Carmela Positano</title>
-  <meta name="description" content="" />
+
+  <title>Casa Carmela Positano | Let the charm of the Amalfi Coast inspire your stay at Casa Carmela.</title>
+  <meta name="description" content="Discover Casa Carmela Positano, your serene escape nestled in the heart of Positano. Book your dream stay today!" />
   <meta name="author" content="@sosamandara" />
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -72,6 +102,6 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <div id="root"></div>
-  <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="js/jquery.1.11.1.js" defer></script>
+  <script src="js/bootstrap.js" defer></script>
 </body>
