@@ -604,3 +604,36 @@ label {
     margin: 50px 0;
   }
 }
+
+/* Responsive Header Styles */
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 38px;
+    padding: 0 10px;
+    line-height: 1.1;
+  }
+  .intro p {
+    font-size: 16px;
+    padding: 0 10px;
+    margin-bottom: 30px;
+  }
+  header .intro-text {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro h1 {
+    font-size: 28px;
+    padding: 0 5px;
+  }
+  .intro p {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+  header .intro-text {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}

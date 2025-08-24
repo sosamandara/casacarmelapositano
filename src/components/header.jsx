@@ -25,13 +25,6 @@ export const Header = (props) => {
       <div className="intro">
         <div className="overlay"></div>
         <div className="container">
-          {orientation === 'portrait' && showRotateMessage && (
-            <div className="rotate-device">
-              <span className="rotate-icon">🔄</span>
-              <p>Rotate your device for the best experience</p>
-              <button onClick={handleDismiss} className="dismiss-button">Dismiss</button>
-            </div>
-          )}
           <div className="intro-text">
             <h1 className="Header-title">
               {props.data ? props.data.title : "Welcome to Casa Carmela"}

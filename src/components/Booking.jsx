@@ -56,7 +56,7 @@ export const Booking = (props) => {
                         4.98
                       </span>
                       <span>⭐⭐⭐⭐⭐</span>
-                      <span style={{ marginLeft: "10px", color: "#eee" }}>49 Reviews</span>
+                      <span style={{ marginLeft: "10px", color: "#eee" }}>55 Reviews</span>
                     </div>
                   </div>
                 </a>
@@ -109,7 +109,7 @@ export const Booking = (props) => {
                     }}
                   >
                     <span style={{ fontWeight: "bold", fontSize: "16px" }}>Exceptional</span>
-                    <p style={{ margin: "3px 0" }}>25 Reviews</p>
+                    <p style={{ margin: "3px 0" }}>30 Reviews</p>
                     <div
                       style={{
                         fontSize: "15px",
